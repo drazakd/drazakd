@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin} from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMail, FiSend } from "react-icons/fi"
 import { profile } from '../../../assets'
-import CV from "../../../assets/CV_DRAME_ABDOUL_RAZAK_DAOUDA_DS.pdf"
+import CV from "../../../assets/CV_DRAME_ABDOUL_RAZAK_DAOUDA_DDIA.pdf"
 
 const Gauche = () => {
     const [text]=useTypewriter({
