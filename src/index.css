@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+@theme {
+  --font-bodyfont: "Poppins", sans-serif;
+  --font-titleFont: "Montserrat", sans-serif;
+
+  --color-bodyColor: #191919;
+  --color-textColor: rgba(255, 255, 255, 0.85);
+  --color-design: #edff20;
+  --color-titleRoundBg: #78cc6d;
+
+  --shadow-greenShadow: 0px 0px 188px -14px rgba(237, 255, 32, 1);
+  --shadow-testShwdow: 11px 0px 13px -15px rgba(0, 0, 0, 1);
+
+  --animation-spin-slow: spin 15s linear infinite;
+  --animation-reverse-spin: reverse-spin 15s linear infinite;
+}
+
+@layer utilities {
+  .font-bodyfont {
+    font-family: var(--font-bodyfont);
+  }
+
+  .font-titleFont {
+    font-family: var(--font-titleFont);
+  }
+
+  .text-textColor {
+    color: var(--color-textColor);
+  }
+
+  .bg-bodyColor {
+    background-color: var(--color-bodyColor);
+  }
+
+  .bg-designColor {
+    background-color: var(--color-design);
+  }
+
+  .text-designColor {
+  color: var(--color-design);
+  }
+
+  .shadow-greenShadow {
+    box-shadow: var(--shadow-greenShadow);
+  }
+
+  .shadow-testShwdow {
+    box-shadow: var(--shadow-testShwdow);
+  }
+
+  .animate-spin-slow {
+    animation: var(--animation-spin-slow);
+  }
+
+  .animate-reverse-spin {
+    animation: var(--animation-reverse-spin);
+  }
+
+  .scrollbar {
+    scrollbar-width: auto;
+    scrollbar-color: var(--scrollbar-thumb, #888) var(--scrollbar-track, transparent);
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: var(--scrollbar-track, transparent);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb, #888);
+    border-radius: 10px;
+    border: 2px solid transparent;
+  }
+
+  @keyframes reverse-spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
+
