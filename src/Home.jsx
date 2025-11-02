@@ -72,6 +72,7 @@ const Home = () => {
   }, [sidenav]);
 
   return (
+    // Conteneur principal
     <div className='w-full lg:w-[85%] h-full lg:h-[85%] bg-transparent text-white z-50 flex flex-col lg:flex-row items-start justify-between'>
         {/* Navigation latérale - Cachée sur mobile, visible sur desktop */}
         <div className='hidden lg:flex w-16 h-96 bg-transparent flex-col gap-4'>
