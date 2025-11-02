@@ -11,7 +11,7 @@ import Home from './Home';
 function App() {
   return (
     <>
-      <div className='w-full min-h-screen md:h-screen font-bodyfont text-textColor bg-black relative overflow-auto'>
+      <div className='w-full min-h-screen md:h-screen font-bodyfont text-textColor bg-black relative overflow-auto md:overflow-hidden'>
         <div className='w-full h-full mx-auto flex justify-center items-center p-4 lg:p-0'>
           <Home />
         </div>
